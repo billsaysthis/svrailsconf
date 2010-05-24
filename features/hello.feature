@@ -9,3 +9,8 @@ Feature: See Homepage
     Then I should see "SV Rails Conf"
     And I should see the png: svtrain.png
     And On LHS I should see links: "Home Program Venue Speakers Registration"
+
+	Scenario: Load the Venue page
+		Given I am on the homepage
+		When I follow Venue
+		Then I should see "Hacker Dojo"
